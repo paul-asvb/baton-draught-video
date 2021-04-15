@@ -1,0 +1,22 @@
+{
+  "name": "baton-draught-video",
+  "version": "1.0.0",
+  "description": "an anagram of david attenborough",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-asvb/baton-draught-video.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-asvb/baton-draught-video/issues"
+  },
+  "homepage": "https://github.com/paul-asvb/baton-draught-video#readme",
+  "dependencies": {
+    "torrent-search-api": "^2.1.3"
+  }
+}
