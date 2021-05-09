@@ -11,25 +11,23 @@ TorrentSearchApi.enableProvider('Yts');
 TorrentSearchApi.enableProvider('Limetorrents');
 TorrentSearchApi.enableProvider('Eztv');
 
-const torrents = TorrentSearchApi.search('The Ninth Day', 'Movies', 100);
 
-console.log("search")
-torrents.then((res) => {
+//input searchTerm, output 🧲Links
+const search = (searchTerm) => {
 
-    res.sort((a, b) => {
-        return a.seeds > b.seeds
-    });
+    return TorrentSearchApi.search(searchTerm, 'Movies', 100).then((res) => {
 
-    res.map(ele => {
-        if (ele.seeds > 10) {
-            console.log(ele.title, " - ", ele.seeds)
-            //console.log(ele.title, " - ", ele.seeds )
-            //TorrentSearchApi.getMagnet(ele).then(e=>console.log(ele, e))
+        res.sort((a, b) => {
+            return a.seeds > b.seeds
+        });
 
-            return ele
-        }
-    });
+        return res.filter(ele => ele.seeds > 10);
 
-    //TorrentSearchApi.getMagnet(res[0]).then(ele=>console.log(ele))
+        //TorrentSearchApi.getMagnet(res[0]).then(ele=>console.log(ele))
 
-})
+    })
+}
+
+module.exports = {
+    search
+}
