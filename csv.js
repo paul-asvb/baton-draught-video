@@ -1,7 +1,8 @@
-const csvFilePath = './narrator_movies.csv'
 const csv = require('csvtojson')
 
 const getRandomMovie = () => {
+    const csvFilePath = './narrator_movies.csv'
+
     return csv()
         .fromFile(csvFilePath)
         .then((jsonObj) => {
@@ -11,6 +12,23 @@ const getRandomMovie = () => {
         })
 }
 
+const getAnimalArray = () => {
+    const csvFilePath = './animals.csv'
+
+    return csv()
+        .fromFile(csvFilePath)
+}
+
+const getSubtitles = () => {
+    const csvFilePath = './subtitles.csv'
+
+    return csv()
+        .fromFile(csvFilePath)
+}
+
+
 module.exports = {
-    getRandomMovie
+    getRandomMovie,
+    getAnimalArray,
+    getSubtitles
 }
