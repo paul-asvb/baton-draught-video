@@ -3,7 +3,6 @@ const csv = require('./csv.js')
 const subtitle = require('subtitle');
 const fs = require('fs')
 
-
 const start = async function () {
 
     const animals = await (await csv.getAnimalArray()).map(a => a.animals)
@@ -19,7 +18,6 @@ const start = async function () {
             threshold: 0.4,
             minMatchCharLength: 6 //Math.min(a.length, 6)
         }
-
         const fuse = new Fuse(subtitles, options)
 
         const result = fuse.search(a)

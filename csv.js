@@ -21,7 +21,6 @@ const getAllMovies = () => {
 
 }
 
-
 const getAnimalArray = () => {
     const csvFilePath = './animals.csv'
 
@@ -35,7 +34,6 @@ const getSubtitles = () => {
     return csv()
         .fromFile(csvFilePath)
 }
-
 
 module.exports = {
     getRandomMovie,
