@@ -1,13 +1,13 @@
-[ ] 2021 Apple  The Year Earth Changed
-[ ] 2020 BBC  Meerkat A Dynasties Special
-[ ] 2020 BBC  Deep Ocean Giants of the Antarctic Deep
+[ ] 2021 Apple The Year Earth Changed
+[ ] 2020 BBC Meerkat A Dynasties Special
+[ ] 2020 BBC Deep Ocean Giants of the Antarctic Deep
 [ ] 2019 BBC Seven Worlds, One Planet
 [ ] 2019 Netflix Our Planet
-[ ] 2019 Terra Mater Factual Studios  Whale Wisdom
+[ ] 2019 Terra Mater Factual Studios Whale Wisdom
 [ ] 2019 WWF International How to Save Our Planet
 [ ] 2019 Pace Brothers Year of the Salmon
 [ ] 2019 Wild Karnataka
-[ ] 2018 Terra Mater Factual Studios  Dragons and Damsels
+[ ] 2018 Terra Mater Factual Studios Dragons and Damsels
 [ ] 2017 BBC Horizon's Dippy and the Whale
 [ ] 2017 South Africa – Eastern Great Escarpment
 [ ] 2016 The Hole How Ronnie and Maggie Saved the World
@@ -34,14 +34,14 @@
 [ ] 1999 Animal People – Octopus Hunter
 [ ] 1996 BBC's Lost Wilderness
 [ ] 1996 QED The Secret Life of Seahorses
-[ ] 1995 Spirits of the Forest  Year of the Gagadju
+[ ] 1995 Spirits of the Forest Year of the Gagadju
 [ ] 1995–2007 BBC Wildlife Specials
 [ ] 1993 Portrait Painter to the Birds
 [ ] 1993 Joan Bakewell's – Memento
 [ ] 1993 Flying with Dinosaurs
 [ ] 1993 Wildlife 100
 [ ] 1993 H.M.S. Pandora  in pursuit of the Bounty.
-[ ] 1992 Eagles  Majestic Hunters
+[ ] 1992 Eagles Majestic Hunters
 [ ] 1990 Animals of the British Countryside
 [ ] 1988 Brathay Trust's – Brathay Explores
 [ ] 1988 Waorani – The Last People
@@ -58,7 +58,7 @@
 [ ] 1974 Spectacular Britain
 [ ] 1972 Around the World in 80 Minutes – A Guided Tour of Our Spectacular Planet
 [ ] 1966 Faraway Places – The Quests of David Attenborough
-[ ] 1965 Two Quest  Attenborough Discovers Manchester
+[ ] 1965 Two Quest Attenborough Discovers Manchester
 [ ] 1964 Indoors and Out Man and the Land
 [ ] 1964 Discovery of the Penicillin
 [ ] 1963 Lets Imagine – The Perfect Horse
@@ -69,7 +69,7 @@
 [ ] 2020 David Attenborough A Life on Our Planet
 [ ] 2020 Extinction The Facts
 [ ] 2019 Seven Worlds, One Planet
-[ ] 2019 Climate Change  The Facts
+[ ] 2019 Climate Change The Facts
 [ ] 2019 Our Planet
 [ ] 2019 Wild Karnataka
 [ ] 2018 Dynasties
@@ -92,7 +92,7 @@
 [ ] 2009 Uncovering Our Earliest Ancestor The Link
 [ ] 2009 Nature's Great Events
 [ ] 2008 Humpbacks From Fire to Ice
-[ ] 2006 Planet Earth  The Diaries
+[ ] 2006 Planet Earth The Diaries
 [ ] 2006 Planet Earth
 [ ] 2005 Animal Crime Scene
 [ ] 2001 The Blue Planet
@@ -106,7 +106,7 @@
 [ ] 1980 The Spirit of Asia
 [ ] 1977 Wildlife on One
 [ ] 1976 The Discoverers
-[ ] 1973  1975 The Explorers
+[ ] 1973 1975 The Explorers
 [ ] 1969 The Miracle of Bali
 [ ] 1967 The World About Us
 [ ] 1960 Travellers' Tales
