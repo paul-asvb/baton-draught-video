@@ -12,18 +12,21 @@ const start = async function () {
     let score = 0
 
     animals.forEach(a => {
+
         const options = {
             includeScore: true,
             includeMatches: true,
             threshold: 0.4,
             minMatchCharLength: 6 //Math.min(a.length, 6)
         }
+
         const fuse = new Fuse(subtitles, options)
 
         const result = fuse.search(a)
         if (result.length > 0) {
             console.log(result.map(e => e.item))
         }
+        
         score = score + result.length
     })
 

@@ -1,9 +1,6 @@
 const s = require('./search.js')
 const csv = require('./csv.js')
 
-
-
-
 const start = async function () {
 
     const movies = await csv.getAllMovies()
