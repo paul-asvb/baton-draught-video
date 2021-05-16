@@ -31,16 +31,15 @@ const start = async function () {
         matches = matches.concat(results);
     })
 
-
-    for (const match of matches) {
+    console.log(Date())
+    matches.forEach(match => {
         const name = string.sanitize(match.item.data.text)
         const startSec = Math.floor(match.item.data.start)
         const endSec = Math.floor(match.item.data.end)
         const duration = endSec - startSec
-        const vla = await video.cut(name, startSec, duration)
-        console.log(vla)
-    }
-
+        video.cut(name, startSec, duration)
+    })
+    console.log(Date())
 
 }
 
