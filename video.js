@@ -1,24 +1,25 @@
 var ffmpeg = require('ffmpeg');
-try {
+
+
+// name of file
+// starttime 00:23:23
+// duration 00:33:33
+const cut = (name, start, duration) => {
+    console.log("cut", name, start, duration)
     var process = new ffmpeg('./test.mkv');
-    process.then(function (video) {
-
+    return process.then((video) =>
         video
-            .setVideoSize('100x?', true, true)
-            .save('./out.avi', function (error, file) {
-                if (!error) {
-                    console.log('Video file: ' + file);
+        .setVideoStartTime("00:11:23")
+        .setVideoDuration(10)
+        .save(`./out/${name}.mpg`, function (error, file) {
+            if (!error) {
+                console.log('Video file: ' + file);
+            } else {
+                console.log('Video error: ' + error);
+            }
+        }))
+}
 
-                } else {
-                    console.log('Video error: ' + error);
-
-                }
-            });
-
-    }, function (err) {
-        console.log('Error: ' + err);
-    });
-} catch (e) {
-    console.log(e.code);
-    console.log(e.msg);
+module.exports = {
+    cut
 }
