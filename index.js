@@ -33,11 +33,12 @@ const start = async function () {
 
     console.log(Date())
     matches.forEach(match => {
+        console.log(match.item)
         const name = string.sanitize(match.item.data.text)
-        const startSec = Math.floor(match.item.data.start)
-        const endSec = Math.floor(match.item.data.end)
-        const duration = endSec - startSec
-        video.cut(name, startSec, duration)
+        const start = Math.floor(match.item.data.start)
+        const end = Math.floor(match.item.data.end)
+        const duration = end - start
+        video.cut(name, start, duration)
     })
     console.log(Date())
 
