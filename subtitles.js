@@ -1,27 +1,46 @@
 const OS = require('opensubtitles-api');
+const https = require('https'); // or 'https' for https:// URLs
+const fs = require('fs');
+var string = require("string-sanitizer");
+
+require('dotenv').config()
+
 const OpenSubtitles = new OS({
     useragent: 'UserAgent',
-    username: '',
-    password: '',
+    username: process.env.OPEN_SUB_USER,
+    password: process.env.OPEN_SUB_PW,
     ssl: true
 });
 
 
-const start = async function () {
-    await OpenSubtitles.login().then(res => {
-            console.log(res.token);
-            console.log(res.userinfo);
-        })
-        .catch(err => {
-            console.log(err);
-        });
+const downloadSubtitle = async function (filmName) {
+
+    const path = `./subs/${string.sanitize(filmName)}.srt`
+
+    if (fs.existsSync(path)) {
+        return
+    }
+
+    await OpenSubtitles.login()
 
     const subtitles = await OpenSubtitles.search({
-        sublanguageid: 'en',  
-        query: '2021 The Year Earth Changed', // Text-based query, this is not recommended.
+        sublanguageid: 'eng',
+        query: filmName, // Text-based query, this is not recommended.
     })
-    console.log(subtitles)
+    if (subtitles.en) {
+        const file = fs.createWriteStream(path);
+        console.log(subtitles.en)
+        https.get(subtitles.en.url, function (response) {
+            response.pipe(file);
+        });
+    }
+
 
 }
 
-start();
+
+//downloadSubtitle();
+
+module.exports = {
+    downloadSubtitle
+}
