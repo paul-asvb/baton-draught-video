@@ -8,10 +8,11 @@ const start = async function () {
         const fn = () => s.search(name)
         return fn;
     });
+
     await searchPromisArray.reduce(async (previousPromise, nextAsyncFunction) => {
         await previousPromise;
         const result = await nextAsyncFunction();
-        console.log(result);
+        result.map(e => console.log(e.title))
     }, Promise.resolve());
 }
 
